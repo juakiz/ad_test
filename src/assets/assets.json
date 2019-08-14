@@ -1,0 +1,272 @@
+{
+	"textures": [
+		{
+			"image": "assets.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 380,
+				"h": 231
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "logo.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 195,
+						"h": 114
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 195,
+						"h": 114
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 195,
+						"h": 114
+					}
+				},
+				{
+					"filename": "hand.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 150,
+						"h": 150
+					},
+					"spriteSourceSize": {
+						"x": 18,
+						"y": 0,
+						"w": 113,
+						"h": 150
+					},
+					"frame": {
+						"x": 198,
+						"y": 1,
+						"w": 113,
+						"h": 150
+					}
+				},
+				{
+					"filename": "balloon0.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 66,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 66,
+						"h": 90
+					},
+					"frame": {
+						"x": 313,
+						"y": 1,
+						"w": 66,
+						"h": 90
+					}
+				},
+				{
+					"filename": "balloon1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 66,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 66,
+						"h": 90
+					},
+					"frame": {
+						"x": 313,
+						"y": 93,
+						"w": 66,
+						"h": 90
+					}
+				},
+				{
+					"filename": "explosion.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 102,
+						"h": 102
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 102,
+						"h": 102
+					},
+					"frame": {
+						"x": 1,
+						"y": 117,
+						"w": 102,
+						"h": 102
+					}
+				},
+				{
+					"filename": "balloon2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 66,
+						"h": 90
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 66,
+						"h": 90
+					},
+					"frame": {
+						"x": 105,
+						"y": 117,
+						"w": 66,
+						"h": 90
+					}
+				},
+				{
+					"filename": "crossbow.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 102,
+						"h": 102
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 12,
+						"w": 102,
+						"h": 77
+					},
+					"frame": {
+						"x": 173,
+						"y": 153,
+						"w": 102,
+						"h": 77
+					}
+				},
+				{
+					"filename": "arrow1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 102,
+						"h": 51
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 17,
+						"w": 102,
+						"h": 16
+					},
+					"frame": {
+						"x": 277,
+						"y": 185,
+						"w": 102,
+						"h": 16
+					}
+				},
+				{
+					"filename": "confetti0.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 20
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 20
+					},
+					"frame": {
+						"x": 173,
+						"y": 117,
+						"w": 20,
+						"h": 20
+					}
+				},
+				{
+					"filename": "confetti1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 20
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 20
+					},
+					"frame": {
+						"x": 277,
+						"y": 203,
+						"w": 20,
+						"h": 20
+					}
+				},
+				{
+					"filename": "confetti2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 20
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 20
+					},
+					"frame": {
+						"x": 277,
+						"y": 153,
+						"w": 20,
+						"h": 20
+					}
+				},
+				{
+					"filename": "confetti3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 20
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 20
+					},
+					"frame": {
+						"x": 299,
+						"y": 203,
+						"w": 20,
+						"h": 20
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:e12e60b4893198e23b17265deab0f161:23ae5eb36d5dd230516517a944f3e23c:a759b6bbc8381ac9c472b28f589ad0d6$"
+	}
+}
