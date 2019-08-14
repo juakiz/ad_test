@@ -34,7 +34,6 @@ export default class GUI extends Phaser.GameObjects.Container {
         'confetti1.png',
         'confetti2.png',
         'confetti3.png',
-
       ],
       angle: { min: 0, max: 360 },
       speed: { min: 200, max: 600 },

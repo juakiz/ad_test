@@ -29,6 +29,7 @@ export default class Hand extends Phaser.GameObjects.Image {
   }
 
   hide() {
+    _main.ee.emit('hideNag');
     this.hideTwn = this.scene.tweens.add({
       targets: this,
       alpha: 0,
@@ -38,6 +39,7 @@ export default class Hand extends Phaser.GameObjects.Image {
   }
 
   show() {
+    _main.ee.emit('showNag');
     this.showTwn = this.scene.tweens.add({
       targets: this,
       alpha: 1,

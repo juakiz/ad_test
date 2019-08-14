@@ -63,6 +63,8 @@ export default class BattleMain extends Phaser.GameObjects.Container {
 
     this.ui = new GUI(this);
 
+    this.nagTxt = this.tapToShoot();
+
     this.hand = new Hand(this);
 
     this.CTA = new CTA(this);
@@ -122,6 +124,35 @@ export default class BattleMain extends Phaser.GameObjects.Container {
 
   transitionToCTA() {
     this.CTA.start();
+  }
+
+  tapToShoot() {
+    const txt = this.scene.make.text({
+      x: 0,
+      y: 0,
+      text: 'TAP TO SHOOT',
+      style: {
+        fontSize: '54px',
+        fontFamily: '"Oswald"',
+        color: '#FFFFFF',
+        align: 'center',
+      },
+      add: true
+    });
+
+    txt.setOrigin(0.5);
+
+    this.add(txt);
+
+    this.ee.on('hideNag', () => { txt.alpha = 0; }, this);
+    this.ee.on('showNag', () => { if (!this.disableShooting) txt.alpha = 1; }, this);
+
+    (txt.resize = () => {
+      txt.x = this.CENTER_X;
+      txt.y = this.BOT - txt.displayHeight;
+    })();
+
+    return txt;
   }
 
   update(time, delta) {
