@@ -6,7 +6,23 @@ import atlasData from '../../assets/assets.json';
 
 export default class PreloaderScene extends Phaser.Scene {
   constructor() {
-    super('PreloaderScene');
+    var sceneConfig = {
+      key: 'PreloaderScene',
+      pack: {
+          files: [{
+                  type: 'rexWebFont',
+                  key: 'webfont',
+                  config: {
+                      google: {
+                          families: ['Oswald']
+                      }
+                  }
+              }
+          ]
+      }
+  };
+    super(sceneConfig);
+    // super('PreloaderScene');
   }
 
   preload() {
@@ -17,8 +33,10 @@ export default class PreloaderScene extends Phaser.Scene {
 
     this.load.on('progress', (value) => {
       progress.clear();
+      progress.fillStyle(0x808080, 1);
+      progress.fillRect(30, (height / 2) - (height * 0.05), width - 60, height * 0.1);
       progress.fillStyle(0xffffff, 1);
-      progress.fillRect(0, (height / 2) - (height * 0.05), width * value, (height * 0.1));
+      progress.fillRect(30, (height / 2) - (height * 0.05), (width * value) - 60, (height * 0.1));
     });
 
     // const scene = this;
@@ -37,10 +55,10 @@ export default class PreloaderScene extends Phaser.Scene {
     //     },
     //     add: true
     //   });
-  
-    //   txt.setShadow(4, 4, '#808080');
+
+    //   txt.setShadow(2, 2, '#808080');
     //   txt.setOrigin(0.5);
-  
+
     //   // this.add(txt);
 
     //   this.input.once('pointerdown', () => {
@@ -48,18 +66,18 @@ export default class PreloaderScene extends Phaser.Scene {
     //     scene.scale.startFullscreen();
     //     this.scene.start('BattleScene');
 
-    //   //   var music = this.sound.add('etnial-music',
-    //   //     {
-    //   //       mute: false,
-    //   //       volume: 1,
-    //   //       rate: 1,
-    //   //       detune: 0,
-    //   //       seek: 0,
-    //   //       loop: true,
-    //   //       delay: 0
-    //   //     });
+    //     //   var music = this.sound.add('etnial-music',
+    //     //     {
+    //     //       mute: false,
+    //     //       volume: 1,
+    //     //       rate: 1,
+    //     //       detune: 0,
+    //     //       seek: 0,
+    //     //       loop: true,
+    //     //       delay: 0
+    //     //     });
 
-    //   //   music.play();
+    //     //   music.play();
     //   });
     // });
 

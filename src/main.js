@@ -1,4 +1,5 @@
 import Phaser from 'phaser';
+import WebFontLoaderPlugin from './js/plugins/webfontloader/webfontloader-plugin';
 
 import Preloader from './js/scenes/preloader-scene';
 import Battle from './js/scenes/battle-scene';
@@ -7,7 +8,7 @@ import Battle from './js/scenes/battle-scene';
 const gameHeight = 640;
 
 const ratio = window.innerWidth / gameHeight;
-console.log(window.innerWidth, window.innerHeight);
+// console.log(window.innerWidth, window.innerHeight);
 
 const config = {
   type: Phaser.AUTO,
@@ -27,7 +28,16 @@ const config = {
     Preloader,
     Battle,
     // CTA,
-  ]
+  ],
+  plugins: {
+    global: [
+      {
+        key: 'WebFontLoader',
+        plugin: WebFontLoaderPlugin,
+        start: true
+      },
+    ]
+  },
 };
 
 const game = new Phaser.Game(config);
