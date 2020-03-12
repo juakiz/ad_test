@@ -44,14 +44,16 @@ export default class Arrow extends Phaser.GameObjects.Sprite {
     tailLine.clear();
 
     if (this.tailPoints.length > 1) {
+      tailLine.beginPath();
+
       tailLine.moveTo(this.tailPoints[0].x, this.tailPoints[0].y);
 
       this.tailPoints.forEach((point, index) => {
         if (!index) return;
         tailLine.lineStyle((index / this.tailPoints.length) * 10, 0xFFFFFF, 0.08/* (index - 1) / this.tailPoints.length */);
         tailLine.lineTo(point.x, point.y);
-        tailLine.strokePath();
       });
+      tailLine.strokePath();
     }
   }
 
